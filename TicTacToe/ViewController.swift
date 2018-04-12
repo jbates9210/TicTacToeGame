@@ -27,8 +27,9 @@ class ViewController: UIViewController {
                 winLabel.isHidden = true
                 playAgain.isHidden = true
                 
-                winLabel.center = CGPoint(x: winLabel.center.x - 500, y: winLabel.center.y)
-                playAgain.center = CGPoint(x: playAgain.center.x + 500, y: playAgain.center.y)
+                self.winLabel.center = CGPoint(x: self.winLabel.center.x + 500, y: self.winLabel.center.y)
+                self.playAgain.center = CGPoint(x: self.playAgain.center.x + 500, y: self.playAgain.center.y)
+ 
             }
         }
         
@@ -75,7 +76,7 @@ class ViewController: UIViewController {
                     }
                     
                     UIView.animate(withDuration: 1, animations: {
-                        self.winLabel.center = CGPoint(x: self.winLabel.center.x + 500, y: self.winLabel.center.y)
+                        self.winLabel.center = CGPoint(x: self.winLabel.center.x - 500, y: self.winLabel.center.y)
                         self.playAgain.center = CGPoint(x: self.playAgain.center.x - 500, y: self.playAgain.center.y)
                     })
                 }
@@ -93,7 +94,7 @@ class ViewController: UIViewController {
         winLabel.isHidden = true
         playAgain.isHidden = true
         
-        winLabel.center = CGPoint(x: winLabel.center.x - 500, y: winLabel.center.y)
+        winLabel.center = CGPoint(x: winLabel.center.x + 500, y: winLabel.center.y)
         playAgain.center = CGPoint(x: playAgain.center.x + 500, y: playAgain.center.y)
     }
 
