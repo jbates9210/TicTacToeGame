@@ -124,15 +124,18 @@
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IUT-qt-k1P"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Circles Win!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZL-EU-itO">
-                                <rect key="frame" x="101" y="347" width="212" height="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Circles Win!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZL-EU-itO">
+                                <rect key="frame" x="0.0" y="347" width="414" height="42"/>
+                                <color key="backgroundColor" red="0.45195022000853574" green="0.58152185873738016" blue="0.89803921568627454" alpha="0.52571168664383561" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="212" id="t3l-oY-5mO"/>
+                                    <constraint firstAttribute="width" constant="414" id="t3l-oY-5mO"/>
                                     <constraint firstAttribute="height" constant="42" id="zr3-tq-Ivq"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                <color key="textColor" red="0.29411764709999999" green="0.46274509800000002" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.22352941176470589" green="0.45490196078431372" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="3" height="2"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wuc-8h-38y">
                                 <rect key="frame" x="162" y="397" width="96" height="30"/>

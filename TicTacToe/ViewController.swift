@@ -16,13 +16,27 @@ class ViewController: UIViewController {
     
     @IBAction func playAgainButton(_ sender: Any) {
         
+        activeGame = true
+        activePlayer = 1
+        gameState = [0,0,0,0,0,0,0,0,0]
         
+        for i in 1..<10 {
+            if let button = view.viewWithTag(i) as? UIButton {
+                button.setImage(nil, for: [])
+                
+                winLabel.isHidden = true
+                playAgain.isHidden = true
+                
+                winLabel.center = CGPoint(x: winLabel.center.x - 500, y: winLabel.center.y)
+                playAgain.center = CGPoint(x: playAgain.center.x + 500, y: playAgain.center.y)
+            }
+        }
         
     }
     // Active game
     var activeGame = true
     
-    // 1 is nought, 2 is cross
+    // 1 is circles, 2 is cross
     var activePlayer = 1
     
     // Array to keep track of 9 numbers for 9 pos on board. 0 -> empty, 1 -> circle, 2 -> cross
@@ -50,6 +64,9 @@ class ViewController: UIViewController {
             for combo in winCombos {
                 if gameState[combo[0]] != 0 && gameState[combo[0]] == gameState[combo[1]] && gameState[combo[1]] == gameState[combo[2]]{
                     activeGame = false
+                    
+                    winLabel.isHidden = false
+                    playAgain.isHidden = false
                     
                     if gameState[combo[0]] == 1 {
                         winLabel.text = "Circles Win!"
